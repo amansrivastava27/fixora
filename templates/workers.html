@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">Available Workers</h1>
+
+        <p class="text-muted">
+            Find skilled workers near you
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        {% for worker in workers %}
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow p-4 worker-card">
+
+                <h3 class="fw-bold">
+                    {{ worker.full_name }}
+                </h3>
+
+                <p>
+                    <strong>Profession:</strong>
+                    {{ worker.profession }}
+                </p>
+
+                <p>
+                    <strong>Experience:</strong>
+                    {{ worker.experience }}
+                </p>
+
+                <p>
+                    <strong>Charges:</strong>
+                    {{ worker.charges }}
+                </p>
+
+                <button class="btn btn-warning w-100 custom-btn">
+                    Hire Worker
+                </button>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

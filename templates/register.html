@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1>Register in Fixora</h1>
+        <p>Select your account type</p>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow p-4 text-center">
+
+                <h3>Worker</h3>
+
+                <p>
+                    Register as plumber, carpenter, electrician or labor.
+                </p>
+
+                <a href="/register/worker" class="btn btn-warning">
+                    Register as Worker
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow p-4 text-center">
+
+                <h3>Customer</h3>
+
+                <p>
+                    Find trusted workers for your work.
+                </p>
+
+                <a href="/register/customer" class="btn btn-dark">
+                    Register as Customer
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

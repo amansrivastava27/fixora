@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-5 register-card">
+
+                <h2 class="text-center mb-4 fw-bold">
+                    Customer Registration
+                </h2>
+
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+
+                        <input
+                            type="text"
+                            name="full_name"
+                            class="form-control custom-input"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+
+                        <input
+                            type="text"
+                            name="phone"
+                            class="form-control custom-input"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control custom-input"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            class="form-control custom-input"
+                            required
+                        >
+                    </div>
+
+                    <button class="btn btn-dark w-100 custom-btn">
+                        Register Customer
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

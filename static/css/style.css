@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero-section{
+    height: 90vh;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    border: none;
+    border-radius: 15px;
+}
+
+.worker-card{
+    transition: 0.3s;
+}
+
+.worker-card:hover{
+    transform: translateY(-8px);
+}
+
+.navbar-brand{
+    letter-spacing: 1px;
+}
